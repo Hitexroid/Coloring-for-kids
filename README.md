@@ -8,19 +8,10 @@ Update at 12 Dec 2016
 
 ## Usage
 <pre>
-  private Handler handler = new Handler() {
-    @Override
-        public void handleMessage(Message msg) {
-        //TODO ...
-        }
-  };
-</pre>
-
-<pre>
  mPaintView.post(new Runnable() {
     @Override
         public void run() {
-            mPaintView.loadFromBitmap(bitmap,handler);
+            mPaintView.loadFromBitmap(bitmap);
         }
 });
 </pre>
