@@ -5,7 +5,6 @@ import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -61,7 +60,7 @@ public class PaintView extends View {
         state = (State) o;
     }
 
-    public void loadFromBitmap(Bitmap originalOutlineBitmap, Handler progressHandler) {
+    public void loadFromBitmap(Bitmap originalOutlineBitmap) {
         int w;
         int h;
         State state = new State();
@@ -96,7 +95,7 @@ public class PaintView extends View {
         synchronized (this) {
             this.state = state;
         }
-        progressHandler.sendEmptyMessage(2);
+
     }
 
     public synchronized boolean isInitialized() {
