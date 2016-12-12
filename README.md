@@ -1,6 +1,6 @@
 # Coloring-for-kids
 Coloring-for-kids
-<h2>Update at 12 Dec 2016:</h2>
+Update at 12 Dec 2016
 
 ## ScreenShot
 
@@ -22,4 +22,8 @@ Coloring-for-kids
             mPaintView.loadFromBitmap(bitmap,handler);
         }
 });
+</pre>
+
+<pre>
+  mPaintView().setPaintColor(Color);
 </pre>
