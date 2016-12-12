@@ -11,6 +11,7 @@ Update at 12 Dec 2016
   private Handler handler = new Handler() {
     @Override
         public void handleMessage(Message msg) {
+        //TODO ...
         }
   };
 </pre>
